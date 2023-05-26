@@ -1,3 +1,5 @@
+package Compilador;
+
 public class Token {
     public byte kind;
     public String spelling;

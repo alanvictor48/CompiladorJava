@@ -1,5 +1,14 @@
+import Compilador.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        try {
+            Scanner scanner = new Scanner(args[0]);
+            // Resto do codigo
+            scanner.fechar();
+        } catch (Exception e) {
+            System.out.println("Erro de leitura do arquivo.");
+            e.printStackTrace();
+        }
     }
 }
