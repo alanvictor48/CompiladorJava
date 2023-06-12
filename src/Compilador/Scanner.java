@@ -1,5 +1,6 @@
 package Compilador;
 
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,6 +22,7 @@ public class Scanner {
         FileReader arquivo = new FileReader(file_name);
         file = new BufferedReader(arquivo);
         currentChar =  (char) file.read();
+        currentSpelling = new StringBuffer();
     }
 
     public void fechar() throws IOException {
